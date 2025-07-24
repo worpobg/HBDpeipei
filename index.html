@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎂 สุขสันต์วันเกิด 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>สุขสันต์วันเกิดนะคั้บคุณเป้ย 💖</h1>
+  <p class="description">
+    ขอให้วันเกิดของคุณเป้ยปีนี้มีความสุขมากๆเบยนะครับ ❄️<br />
+    เต็มไปด้วยความสุข ความทรงจำดี ๆ ตลอดไปเบยน้าาา 💝
+  </p>
+
+  <!-- SLIDES -->
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="photo/pei1.jpg" class="slide-img" onclick="openLightbox(this)" />
+      <div class="caption">ภาพแรกที่ผมได้เห็นคุณเป้ย so cute มัคๆ ❤️</div>
+    </div>
+    <div class="mySlides">
+      <img src="photo/pei2.jpg" class="slide-img" onclick="openLightbox(this)" />
+      <div class="caption">อันนี้คุณเป้ยส่งมาเป็นวิดีโอ ผมก็แคปเก็บไว้ 💫</div>
+    </div>
+    <div class="mySlides">
+      <img src="photo/pei3.jpg" class="slide-img" onclick="openLightbox(this)" />
+      <div class="caption">น่ารักเหมือนเดิมเลยเป้ย 💕</div>
+    </div>
+
+    <!-- arrows -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+
+  <button class="btn" onclick="playMusic()">ฟังเพลงวันเกิด 🎶</button>
+  <audio id="bgm" src="song/Best Part - Daniel Caesar (feat. H.E.R.) _ Lyrics & แปล.mp3"></audio>
+
+  <footer>&copy; ขอให้คุณเป้ยมีความสุขที่สุดในโลก 💌</footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <span>&times;</span>
+    <img id="lightbox-img" src="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
